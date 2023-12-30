@@ -5,10 +5,10 @@
 ## API Routes Overview
 
 This document provides information about the API routes for the application. These routes are designed to handle various actions related to users and orders.
-<!-- 
-## Postman Test Link
 
-[Link to Postman collection for testing the API](https://www.postman.com/your-workspace/your-collection/) -->
+## Endpoints doc [Postman]
+
+[Link to Postman collection for testing the API](https://documenter.getpostman.com/view/31193805/2s9YsDkEqB) 
 
 ## Prerequisites
 
