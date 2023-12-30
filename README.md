@@ -8,7 +8,7 @@ This document provides information about the API routes for the application. The
 
 ## Endpoints doc [Postman]
 
-[Link to Postman collection for testing the API](https://documenter.getpostman.com/view/31193805/2s9YsDkEqB) 
+https://documenter.getpostman.com/view/31193805/2s9YsDkEqB
 
 ## Prerequisites
 
