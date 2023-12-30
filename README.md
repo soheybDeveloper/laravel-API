@@ -17,7 +17,7 @@ This document provides information about the API routes for the application. The
 
 ## Installation
 
-1. Clone the repository: `git clone [https://github.com/your/repository.git](https://github.com/soheybDeveloper/laravel-API.git)`
+1. Clone the repository: `git clone [https://github.com/soheybDeveloper/laravel-API.git]`
 2. Install dependencies: `composer install`
 3. Configure the database connection in the `.env` file
 4. Run migrations: `php artisan migrate`
