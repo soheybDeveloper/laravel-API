@@ -9,7 +9,7 @@ This document provides information about the API routes for the application. The
 ## Endpoints doc [Postman]
 
 https://documenter.getpostman.com/view/31193805/2s9YsDkEqB
-<!-
+<!--
 ## Prerequisites
 
 - PHP installed
@@ -40,6 +40,7 @@ https://documenter.getpostman.com/view/31193805/2s9YsDkEqB
 - **Create Order:** `POST /orders`
 - **Get All Orders:** `GET /orders`
 - **Get Single Order:** `GET /orders/{id}`
-- **Update Order:** `PUT /orders/edit/{id}` -->
+- **Update Order:** `PUT /orders/edit/{id}`
 - **Delete Order:** `DELETE /orders/delete/{id}`
-- **Search Orders:** `POST /orders/search`
+- **Search Orders:** `POST /orders/search` 
+ -->
