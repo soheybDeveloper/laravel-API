@@ -4,8 +4,8 @@ namespace App\services;
 use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-use App\Enums\OrderStatus;
-use App\Http\Resources\Order\ShowResource;
+//use App\Enums\OrderStatus;
+//use App\Http\Resources\Order\ShowResource;
 class OrderService
 {
     private function validateOrderAttributes(array $data,$calledmethod): array
@@ -17,20 +17,21 @@ class OrderService
         }
 
 
-        if($calledmethod==1)  $rules = [
+//        if($calledmethod==1)
+            $rules = [
             'title' => 'unique:orders',
             'description' => 'required',
             'price' => 'required|numeric',
             'status' => 'in:pending,processing,shipped,delivered',
 
         ];
-        else      $rules = [
-            'title' => 'required|unique:orders',
-            'description' => 'required',
-            'price' => 'required|numeric',
-            'status' => 'in:pending,processing,shipped,delivered',
-
-        ];
+//        else      $rules = [
+//            'title' => 'required|unique:orders',
+//            'description' => 'required',
+//            'price' => 'required|numeric',
+//            'status' => 'in:pending,processing,shipped,delivered',
+//
+//        ];
 
         $messages = [
             'title.required' => __("Title is required"),
@@ -40,7 +41,8 @@ class OrderService
             'price.numeric' => __("Price should be numeric"),
 //            'status.required' => __("Status is required"),
             'status.in' => __("Invalid status value"),
-            // Add other custom messages for validation errors
+
+
         ];
 
         return Validator::validate($data, $rules, $messages);
@@ -73,6 +75,7 @@ class OrderService
     public function getAllOrders(): array
     {
         $user = Auth::user();
+
         return [
             'success' => true,
             'status_code' => 201,

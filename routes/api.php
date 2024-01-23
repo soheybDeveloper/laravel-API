@@ -26,7 +26,7 @@ Route::group(['prefix' => 'v1'], function () {
     Route::apiResource('users', UserController::class)->only('store');
 
     Route::group(['middleware' => 'auth:sanctum'], function () {
-        Route::post('users/logout', [UserController::class, 'logout']);
+    Route::post('users/logout', [UserController::class, 'logout']);
 
     Route::post('/orders', [OrderController::class, 'create']);
     Route::get('/orders', [OrderController::class, 'index']);
